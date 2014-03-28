@@ -1,0 +1,19 @@
+{
+  "name": "angular-generator",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/steffenmllr/angular-generator.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steffenmllr/angular-generator/issues"
+  },
+  "homepage": "https://github.com/steffenmllr/angular-generator",
+  "dependencies": {
+    "mkdirp": "^0.3.5",
+    "handlebars": "^2.0.0-alpha.2"
+  }
+}

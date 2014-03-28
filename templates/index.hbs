@@ -1,0 +1,36 @@
+/*
+ * {{fp}}
+ */
+
+'use strict';
+
+var angular = require('vendors').angular,
+    ngModule = angular.module('{{appname}}.{{module}}', ['ui.router']);
+
+// Controllers
+require('./controllers/{{module}}Ctrl')(ngModule);
+
+/*
+// Providers
+require('./providers/provider')(ngModule);
+
+// Directives
+require('./directives/directive')(ngModule);
+
+// Filters
+require('./filters/filter')(ngModule);
+*/
+
+// Routes
+ngModule.config(function ($stateProvider) {
+  $stateProvider
+    .state('{{appname}}.{{module}}', {
+      url: '/{{module}}',
+      views: {
+        '@': {
+          controller: '{{module}}Ctrl',
+          templateUrl: 'app/{{module}}/templates/{{module}}.html'
+        }
+      }
+    });
+});
